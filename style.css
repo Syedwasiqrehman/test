@@ -1,0 +1,364 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    overflow: hidden;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('wasiq.jpg'); 
+    background-size: cover;
+    filter: blur(2px); 
+    z-index: -1; 
+    
+}
+
+.sim {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 3;
+    overflow: hidden;
+}
+.hi1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hi2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.su {
+    color: rgb(186, 230, 245);
+    font-size: 3rem;
+}
+.su:hover{
+ color: blue;
+ cursor: pointer;
+}
+
+.in {
+    height: 30px;
+    width: 350px;
+    border: 2px solid blue;
+    border-radius: 7% ;
+    font-size: 1rem;
+    display: flex;
+    align-items: end;
+}
+.in:hover{
+    color: blue;
+}
+.selec {
+    position: relative;
+    right: 70px;
+    visibility: hidden;
+   
+
+}
+.sel{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(186, 230, 245);
+}
+.sel:hover{
+    background-color: blue;
+}
+
+/* content */
+
+.content{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px; 
+    overflow: hidden;
+    
+}
+
+.con1,.con2,.con3,.con4{
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 4%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+/* footer */
+.summ {
+    width: 100%;
+    margin-top: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p {
+    color: rgb(186, 230, 245);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0px;
+}
+.p:hover {
+    border: 2px solid black;
+    color: blue;
+    cursor: pointer;
+    
+}
+.btn {
+    margin-right: 300px;
+    height: 30px;
+    width: 80px;
+    color: black;
+    background-color: rgb(186, 230, 245);
+    border-radius: 7%;
+}
+.btn:hover{
+background-color: blue ;
+cursor: pointer;
+}
+.wasiq {
+    font-size: 3rem;
+    color: black;
+    
+}
+.wasiq:hover {
+    border: 2px solid black;
+    background-color: blue;
+}
+.wasiq1 {
+    font-size: 3rem;
+    color: black;
+    
+}
+.wasiq1:hover {
+    border: 2px solid black;
+    background-color: blue;
+}
+.temp {
+    position: absolute;
+    
+    color: black;
+    font-size: 2.5rem;
+    width: 100%;
+    
+    gap: 5px;
+}
+.temp:hover{
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.humi {
+    
+    color: black;
+    font-size: 2.5rem;
+    position: relative;
+    
+    width: 100%;
+    
+    
+    gap: 5px;
+}
+.humi:hover{
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.wind{
+    
+    color:black;
+    font-size: 2.5rem;
+    
+    width: 100%;
+    
+    gap: 5px;
+}
+.wind:hover{
+    border: 2px solid black;
+    background-color: blue;
+}
+.dew {
+    
+    color:black;
+    font-size: 2.5rem;
+    
+    width: 100%;
+    
+    gap: 5px;
+
+}
+.dew:hover{
+    border: 2px solid black;
+    background-color: blue;
+}
+
+/* footer */
+.icon {
+    margin-right: 30px;
+    font-size: 2.5rem;
+    color: rgb(186, 230, 245);
+}
+.icon:hover{
+    color: blue;
+}
+
+@media screen and (max-width: 1280px) {
+    .su {
+        font-size: 2.3rem;
+    }
+    .icon {
+        font-size: 2.3rem;
+    }
+    .in {
+        width: 60vw;
+    }
+    .btn {
+        width: 10vw;
+    }
+    
+    .summ {
+        margin-top: 20px;
+    }
+    .temp , .wind , .dew , .humi {
+        font-size: 1.5rem;
+        
+    }
+    
+    
+}
+
+@media screen and (max-width: 775px) {
+    .su {
+        font-size: 2rem;
+    }
+    .icon {
+        font-size: 2rem;
+    }
+    .in {
+        width: 50vw;
+    }
+    .btn {
+        width: 15vw;
+    }
+    .content {
+        margin-top: 80px;
+        flex-wrap: wrap;
+        height: auto; /* Adjust height for better responsiveness */
+    }
+    .con1, .con2, .con3, .con4 {
+        width: calc(50% - 5px);
+        box-sizing: border-box;
+        padding: 10px;
+        height: 290px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 3px solid black;
+        
+    }
+    .summ {
+        margin-top: 20px;
+    }
+    .temp , .wind , .dew , .humi {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .sim {
+        width: 100%;
+    }
+    .su {
+        font-size: 1.4rem;
+    }
+    .icon {
+        font-size: 1.4rem;
+    }
+    .hi2{
+        height: 70%;
+        
+    }
+    .in {
+        height: 100%;
+        width: 45vw;
+    }
+    .btn {
+        height: 100%;
+        width: 10vw;
+    }
+    .selec {
+        visibility: hidden;
+    }
+    .content {
+        height: 600px;
+        flex-direction: column;
+        
+         margin-top: 50px;
+         flex-wrap: nowrap;
+    }
+    .con1 , .con2 , .con3 , .con4 {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        border: 2px solid transparent;
+        
+        
+    }
+    .con1 {
+        gap: 20px;
+    }
+    .temp , .wind , .dew , .humi {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        font-size: 1.5rem;
+
+    }
+    .wasiq {
+        font-size: 2rem;
+    }
+    .wasiq1 {
+        visibility: hidden;
+
+    }
+    .p {
+        left: 100px;
+        
+    }
+    .summ {
+        margin-top: 40px;
+    }
+} 
